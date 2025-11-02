@@ -13,15 +13,15 @@ It includes documentation of hardware inspection, radio signal capture, rolling 
 The remote control contains several buttons connected to a small PCB. There is no visible microcontroller, which suggests limited processing power or encryption capabilities.  
 The manual for the tested system confirms that all models in this series share the same communication protocol and pairing process.
 
-<img width="459" height="402" alt="image" src="https://github.com/user-attachments/assets/a505f482-842f-424c-ad79-7c14797c6f9b" />  
-<img width="459" height="402" alt="Screenshot 2025-11-02 at 18 10 42" src="https://github.com/user-attachments/assets/098ff7ad-6e2f-4b7c-acee-23129d885e70" />
+<img width="400" height="402" alt="image" src="https://github.com/user-attachments/assets/a505f482-842f-424c-ad79-7c14797c6f9b" />  
+<img width="400" height="402" alt="Screenshot 2025-11-02 at 18 10 42" src="https://github.com/user-attachments/assets/098ff7ad-6e2f-4b7c-acee-23129d885e70" />
 
 # Communication Method
 
 Garage doors use **433 MHz radio signals**, a common frequency for low-power wireless devices such as car remotes and toys. Using a **HackRF SDR** with tools like **GNU Radio** and **Gqrx**, tests confirmed that the transmitter operates around **433.8 MHz**.
 
-<img width="459" height="402" alt="image" src="https://github.com/user-attachments/assets/436eec10-60eb-4ad7-8c19-dc5689f768a8" />  
-<img width="459" height="402" alt="image" src="https://github.com/user-attachments/assets/24550d56-ad4e-4e4e-acb5-56e5ca9940b9" />
+<img width="400" height="402" alt="image" src="https://github.com/user-attachments/assets/436eec10-60eb-4ad7-8c19-dc5689f768a8" />  
+<img width="400" height="402" alt="image" src="https://github.com/user-attachments/assets/24550d56-ad4e-4e4e-acb5-56e5ca9940b9" />
 
 # Communication Security
 
