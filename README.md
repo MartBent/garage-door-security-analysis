@@ -1,6 +1,18 @@
-# Introduction
+# Garage Door Security Research
 
-This research explores how a garage door communicates with its remote control and how secure that connection is. Using a commercial 433 MHz garage door system, the study examines the hardware, radio communication, security mechanisms, and potential vulnerabilities.  
+> [!NOTE]  
+> This research was conducted **for educational purposes only**.  
+> No active systems were harmed or exploited during testing.  
+> Sensitive or brand-specific details have been anonymized.
+
+This repository contains a security analysis of a commercial **433 MHz garage door system**.  
+It includes documentation of hardware inspection, radio signal capture, rolling code analysis, and proof-of-concept tests demonstrating potential vulnerabilities.  
+All tests were performed in a controlled environment.
+
+# Overview
+
+This study explores how a garage door communicates with its remote control and how secure that connection is.  
+Using a commercial 433 MHz system, it examines the hardware, radio communication, security mechanisms, and vulnerabilities in its implementation.  
 The main research question is: **How does communication with a garage door work, and how secure is it?**
 
 ## Hardware
@@ -63,3 +75,10 @@ Only two bytes differ, confirming an **8-bit rolling section** duplicated for er
 1. The rolling code is only 8 bits long, meaning the door could theoretically be brute-forced with a maximum of 255 attempts.  
 2. Further practical testing showed that the system does not appear to validate the rolling code at all—any random value in the rolling code field triggers the door to open.  
 3. The **source code used for these practical tests** can be found in the [`software/`](./software/) folder of this repository.
+
+# Tools Used
+
+- **HackRF One** – Software-defined radio for signal capture  
+- **GNU Radio Companion** – Signal processing and data pipeline design  
+- **Inspectrum** – Waveform analysis and binary decoding  
+- **Gqrx SDR** – Spectrum visualization and recording  
