@@ -8,12 +8,6 @@
 This repository contains a security analysis of a commercial **433 MHz garage door system**.  
 It includes documentation of hardware inspection, radio signal capture, rolling code analysis, and proof-of-concept tests demonstrating potential vulnerabilities.
 
-# Overview
-
-This study explores how a garage door communicates with its remote control and how secure that connection is.  
-Using a commercial 433 MHz system, it examines the hardware, radio communication, security mechanisms, and vulnerabilities in its implementation.  
-The main research question is: **How does communication with a garage door work, and how secure is it?**
-
 ## Hardware
 
 The remote control contains several buttons connected to a small PCB. There is no visible microcontroller, which suggests limited processing power or encryption capabilities.  
