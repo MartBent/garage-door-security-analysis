@@ -6,8 +6,7 @@
 > Sensitive or brand-specific details have been anonymized.
 
 This repository contains a security analysis of a commercial **433 MHz garage door system**.  
-It includes documentation of hardware inspection, radio signal capture, rolling code analysis, and proof-of-concept tests demonstrating potential vulnerabilities.  
-All tests were performed in a controlled environment.
+It includes documentation of hardware inspection, radio signal capture, rolling code analysis, and proof-of-concept tests demonstrating potential vulnerabilities.
 
 # Overview
 
