@@ -1,4 +1,4 @@
-# Garage Door Security Research
+# Garage Door Security analysis
 
 > [!NOTE]  
 > This research was conducted **for educational purposes only**.  
