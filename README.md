@@ -50,12 +50,16 @@ When the button is held down, a 16 ms delay is introduced between signals so the
 
 <img width="973" height="282" alt="image" src="https://github.com/user-attachments/assets/65bd9049-1913-42a2-98ad-b2cb15af1504" />
 
+The conversion results in a consistent signal pattern with 12 start pulses and 4 ms delays.
 The signal can be converted to binary format using Inspectrum’s threshold function:
 
 <img width="1121" height="257" alt="image" src="https://github.com/user-attachments/assets/ae322bad-ce07-48b8-a973-fb780acdb124" />
 
-The conversion results in a consistent signal pattern with 12 start pulses and 4 ms delays.  
-Binary encoding depends on pulse duration (1 = full pulse, 0 = half pulse). Comparing multiple transmissions reveals varying bytes:
+Binary encoding depends on pulse duration (1 = full pulse, 0 = half pulse).
+
+For example, the picture above yields the following binary data: **1101 1111 1101 1011**
+ 
+Apply this decoding method for the whole signal reveals the following binary signal, shown in hexadecimal format:
 
 0xDF DB **59 59** 54 E4 A1 DB \
 0xDF DB **6C C6** 54 E4 A1 DB \
