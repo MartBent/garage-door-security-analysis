@@ -65,17 +65,17 @@ Apply this decoding method for the whole signal reveals the following binary sig
 0xDF DB **6C C6** 54 E4 A1 DB \
 0xDF DB **49 49** 54 E4 A1 DB
 
-Only two bytes differ, confirming an **8-bit rolling section** duplicated for error detection.
+Only two bytes differ, confirming an **8-bit rolling section** duplicated for error detection. The source code for sending this data using a [Simple 433 MHz transmitter](https://randomnerdtutorials.com/rf-433mhz-transmitter-receiver-module-with-arduino/) can be found at [`software/`](./software/)
 
 # Vulnerabilities
 
 1. The rolling code is only 8 bits long, meaning the door could theoretically be brute-forced with a maximum of 255 attempts.  
 2. Further practical testing showed that the system does not appear to validate the rolling code at all—any random value in the rolling code field triggers the door to open.  
-3. The **source code used for these practical tests** can be found in the [`software/`](./software/) folder of this repository.
 
 # Tools Used
 
 - **HackRF One** – Software-defined radio for signal capture  
 - **GNU Radio Companion** – Signal processing and data pipeline design  
 - **Inspectrum** – Waveform analysis and binary decoding  
-- **Gqrx SDR** – Spectrum visualization and recording  
+- **Gqrx SDR** – Spectrum visualization and recording
+- **VSCode + ATtiny45** - For practical testing
